@@ -2,16 +2,14 @@
 #'
 #' Creates a nice-looking mosaic plot in ggplot-style.
 #' @param data A dataset.
-#' @param x .
-#' @param y .
+#' @param xvar name of the first variable
+#' @param yvar name of the second variable
 #' @param useNA If "no", the default.
 #' @param ... Further inputs.
 #' @author Dennis Freuer
 #' @import ggplot2
 #' @export
-ggmosaic <- function(data, x, y, useNA="no", ...){
-  xvar <- deparse(substitute(x))
-  yvar <- deparse(substitute(y))
+ggmosaic <- function(data, xvar, yvar, useNA="no", ...){
   mydata <- data[c(xvar, yvar)];
   mytable <- table(mydata, useNA=useNA);
   widths <- c(0, cumsum(apply(mytable, 1, sum)));

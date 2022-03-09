@@ -12,10 +12,12 @@
 #' @import ggplot2
 #' @export
 #'
-ggfluct <-function(tbl, type = "size", boxFill = "grey90",
+ggfluct <-function(table, type = "size", boxFill = "grey90",
                    floor = 0, ceiling = max(table$freq,na.rm = TRUE),
                    xlab="", ylab=""){
-
+  require(ggplot2)
+  # base code from ggplot2:ggfluctionation
+  
   if (is.table(table))
     table <- as.data.frame(t(table))
   oldnames <- names(table)
@@ -33,9 +35,9 @@ ggfluct <-function(tbl, type = "size", boxFill = "grey90",
     ny <- length(levels(table$y))
     p <- ggplot(table, aes_string(x = "x", y = "y", height = "freq",
                                   width = "freq", fill = "border")) +
-
+      
       geom_tile(colour = "black") +
-
+      
       scale_fill_identity() + theme(aspect.ratio = ny/nx) +
       xlab(xlab) + ylab(ylab) +
       theme(axis.text.y = element_text(angle = 90, hjust = 0.5))
