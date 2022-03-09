@@ -4,7 +4,7 @@
 #' @param data A dataset.
 #' @param xvar name of the first variable
 #' @param yvar name of the second variable
-#' @param useNA If "no", the default.
+#' @param useNA Should NAs be considered (regarding to the table() function)
 #' @param ... Further inputs.
 #' @author Dennis Freuer
 #' @import ggplot2
