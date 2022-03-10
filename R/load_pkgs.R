@@ -2,7 +2,7 @@
 #'
 #' Loads and installs (if necessary) several packages at once.
 #' @param pkgs  vector of package names as character strings.
-#' @param install_new_pgs=TRUE Should unavailable packages be installed
+#' @param install_new_pgs Should unavailable packages be installed
 #' automatically using the install.packages() function? Default is TRUE. 
 #' @author Dennis Freuer
 #' @export
