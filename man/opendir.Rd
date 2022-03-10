@@ -10,7 +10,8 @@ opendir(dir = getwd())
 \item{dir}{Path, that should be opened with the current working directory as default.}
 }
 \description{
-Short function for opening a file directory within any operating system (Windows, MAC OS, etc.) from R directly.
+Short function for opening either a file directory within any operating system (Windows, MAC OS, etc.) 
+or a website (only working with the complete url) from R directly.
 }
 \author{
 Dennis Freuer

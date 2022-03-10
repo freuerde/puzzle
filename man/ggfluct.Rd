@@ -4,12 +4,17 @@
 \alias{ggfluct}
 \title{Fluctuation plot}
 \usage{
-ggfluct(tbl, type = "size", boxFill = "grey90", floor = 0,
-  ceiling = max(table$freq, na.rm = TRUE), xlab = "", ylab = "")
+ggfluct(
+  table,
+  type = "size",
+  boxFill = "grey90",
+  floor = 0,
+  ceiling = max(table$freq, na.rm = TRUE),
+  xlab = "",
+  ylab = ""
+)
 }
 \arguments{
-\item{tbl}{A 2-dim table (cross-table).}
-
 \item{type}{Represents the type of boxes within the plot.}
 
 \item{boxFill}{String that represents the colour of boxes within the plot.}
@@ -21,6 +26,8 @@ ggfluct(tbl, type = "size", boxFill = "grey90", floor = 0,
 \item{xlab}{Character string representing the label of  the x-axis.}
 
 \item{ylab}{Character string representing the label of  the y-axis.}
+
+\item{tbl}{A 2-dim table (cross-table).}
 }
 \description{
 This function generates a fluctuation plot in ggplot-style.

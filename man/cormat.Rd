@@ -4,7 +4,12 @@
 \alias{cormat}
 \title{Heatmap and ordered table of pairwise correlations}
 \usage{
-cormat(df, print_cors = FALSE, rnd = NULL)
+cormat(
+  df,
+  print_cors = FALSE,
+  rnd = NULL,
+  method = c("pearson", "kendall", "spearman")
+)
 }
 \arguments{
 \item{df}{A data frame (categorical variables are allowed and will be ignored).}

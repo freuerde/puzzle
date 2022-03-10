@@ -5,15 +5,36 @@
 \alias{tbls1}
 \title{Table 1 for epidemiological purposes}
 \usage{
-tbl1(d, strat = NULL, mrgn = 2, path = NULL, sheetName = NULL,
-  mode = c("auto", "median", "mean"), cat_freq = c("all", "rel",
-  "abs"), exact = c("ifNecessary", "never", "always"), p_values = TRUE,
-  alpha = 0.05, rnd = 3, coloured_excel = TRUE, cont_cor = FALSE)
+tbl1(
+  d,
+  strat = NULL,
+  mrgn = 2,
+  path = NULL,
+  sheetName = NULL,
+  mode = c("auto", "median", "mean"),
+  cat_freq = c("all", "rel", "abs"),
+  exact = c("ifNecessary", "never", "always"),
+  p_values = TRUE,
+  alpha = 0.05,
+  rnd = 3,
+  coloured_excel = TRUE,
+  cont_cor = FALSE
+)
 
-tbls1(d, strats, path = NULL, mode = c("auto", "median", "mean"),
-  exact = c("ifNecessary", "never", "always"), cat_freq = c("all",
-  "rel", "abs"), p_values = TRUE, coloured_excel = TRUE, mrgn = 2,
-  rnd = 3, alpha = 0.05, cont_cor = FALSE)
+tbls1(
+  d,
+  strats,
+  path = NULL,
+  mode = c("auto", "median", "mean"),
+  exact = c("ifNecessary", "never", "always"),
+  cat_freq = c("all", "rel", "abs"),
+  p_values = TRUE,
+  coloured_excel = TRUE,
+  mrgn = 2,
+  rnd = 3,
+  alpha = 0.05,
+  cont_cor = FALSE
+)
 }
 \arguments{
 \item{d}{Data frame or data table with all variables of interest for

@@ -4,13 +4,24 @@
 \alias{verif_lm}
 \title{Advanced residual plots and tests for linear models}
 \usage{
-verif_lm(mdl, results = c("print", "return"))
+verif_lm(
+  mdl,
+  dat = NULL,
+  results = c("markdown", "return", "print"),
+  mkd_path = NULL
+)
 }
 \arguments{
 \item{mdl}{A linear model of class lm.}
 
-\item{results}{Choose "print", if results should be printed, but not returned.
-Choose "return" if results should be returned in a list, but not printed.}
+\item{dat}{The dataset on which the model was applied}
+
+\item{results}{"markdown" creates a markdown summary document.
+"return" returns all analyses in a list.
+"print" prints the output on the console and shows the plot.}
+
+\item{mkd_path}{Can be used to set the path, where the created markdown document should be stored.
+If NULL, the current path (getwd()) will be used to save the markdown document.}
 }
 \value{
 Returns, if desired, a list of length 6 with an summary of tests,

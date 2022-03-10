@@ -4,16 +4,16 @@
 \alias{ggmosaic}
 \title{Mosaic plot in ggplot-style}
 \usage{
-ggmosaic(data, x, y, useNA = "no", ...)
+ggmosaic(data, xvar, yvar, useNA = "no", ...)
 }
 \arguments{
 \item{data}{A dataset.}
 
-\item{x}{.}
+\item{xvar}{name of the first variable}
 
-\item{y}{.}
+\item{yvar}{name of the second variable}
 
-\item{useNA}{If "no", the default.}
+\item{useNA}{Should NAs be considered (regarding to the table() function)}
 
 \item{...}{Further inputs.}
 }
