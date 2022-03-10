@@ -45,7 +45,7 @@
 #'
 tbl1 <- function(d, strat=NULL, mrgn=2, path=NULL, sheetName=NULL, mode=c("auto","median","mean"),
                  cat_freq=c("all","rel","abs"), exact=c("ifNecessary","never","always"),
-                 p_values=TRUE, alpha=0.05, rnd=3, coloured_excel=TRUE, cont_cor=FALSE){
+                 p_values=TRUE, alpha=0.05, rnd=3, coloured_excel=TRUE, cont_cor=FALSE){ 
 
   if(!is.null(path)){
     if(substr(path, nchar(path)-4, nchar(path)) != ".xlsx"){
