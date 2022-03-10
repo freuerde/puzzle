@@ -9,6 +9,7 @@
 #' @param open Should the HTML output be opened immediately after saving? Default is FALSE. 
 #' @param overwrite Should an already existing file be overwritten? Default is TRUE.
 #' @return Save a HTML document without returning anything.
+#' @details This function is also used within the verif_lm() function.
 #' @author Dennis Freuer
 #' @export
 #'
