@@ -1,4 +1,4 @@
-#' Creates ggplot2 default colours
+#' Returns ggplot2 default colour-codes
 #'
 #' Creates the colour code for the first n ggplot2 default colours.
 #' @param n An integer value representing the desired number of colours.
