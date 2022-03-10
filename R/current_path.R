@@ -1,13 +1,11 @@
-#' Replaces german umlaute
+#' Returns the current path
 #'
-#' This function replaces german umlaute in an appropriate way to avoid
-#' issues with special characters. In addition, user defined elements
-#' can be replaced by an desired element, too.
+#' Returns the current path to the folder, where the current R-script is stored.
 #' @param names Character vector that contains german umlaute.
 #' @param and Character vector.If not NULL the vector "and"
 #' (default: c("-"," ")) will be replaced by the element "by"
 #' @param by Character element. Set to NULL, if no replacement is desired.
-#' @return Returns a character vector with replaced german umlaute.
+#' @return Returns the current path as a string.
 #' @author Dennis Freuer
 #' @export
 #'
