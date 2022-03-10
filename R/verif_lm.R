@@ -8,7 +8,7 @@
 #' "return" returns all analyses in a list.
 #' "print" prints the output on the console and shows the plot.
 #' @param mkd_path Can be used to set the path, where the created markdown document should be stored.
-#' If NULL, the current active path (getwd()) will be used to save the markdown document. 
+#' If NULL, the current path (getwd()) will be used to save the markdown document. 
 #' @return Returns, if desired, a list of length 6 with an summary of tests,
 #' all calculated tests and plots.
 #' @author Dennis Freuer
