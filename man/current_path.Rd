@@ -2,17 +2,9 @@
 % Please edit documentation in R/current_path.R
 \name{current_path}
 \alias{current_path}
-\title{Returns the current path}
+\title{Returns the path to folder of the current R-script}
 \usage{
 current_path()
-}
-\arguments{
-\item{names}{Character vector that contains german umlaute.}
-
-\item{and}{Character vector.If not NULL the vector "and"
-(default: c("-"," ")) will be replaced by the element "by"}
-
-\item{by}{Character element. Set to NULL, if no replacement is desired.}
 }
 \value{
 Returns the current path as a string.

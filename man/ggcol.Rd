@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggcol.R
 \name{ggcol}
 \alias{ggcol}
-\title{Creates ggplot2 default colours}
+\title{Returns ggplot2 default colour-codes}
 \usage{
 ggcol(n = 3, h = c(0, 360) + 15)
 }
