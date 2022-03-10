@@ -7,5 +7,5 @@
 #'
 current_path <- function(){ return(dirname(rstudioapi::getSourceEditorContext()$path)) }
 
-#' @describeIn just another notation.
+#' @describeIn current_path Shorter notation.
 crnt_path <- function(){ return(dirname(rstudioapi::getSourceEditorContext()$path)) }
