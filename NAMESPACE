@@ -2,6 +2,7 @@
 
 export(change_theme)
 export(cormat)
+export(crnt_path)
 export(current_path)
 export(ggcol)
 export(ggfluct)

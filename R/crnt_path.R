@@ -6,3 +6,6 @@
 #' @export
 #'
 crnt_path <- function(){ return(dirname(rstudioapi::getSourceEditorContext()$path)) }
+
+#' @describeIn crnt_path Shorter notation.
+#' current_path <- function(){ return(dirname(rstudioapi::getSourceEditorContext()$path)) }
